@@ -8,5 +8,5 @@ Created on Fri Aug 05 15:23:18 2016
 imageData =  {"attachment":{
       "type":"image",
       "payload":{
-          "url":"https://lh3.googleusercontent.com/RxeMcxUVJAvvWKkqWK4tkAwJKiLqLhzwu0O3SMQlR6g_NfqaGB12uWunfwLNBRpGn8o=w300" 
+          "url":"URL of the image" 
       }}}

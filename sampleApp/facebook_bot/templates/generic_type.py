@@ -13,12 +13,12 @@ genericData = {
         "elements":[
           {
             "title":"generic Example",
-            "image_url":"https://www.theupsstore.com/Image%20Library/theupsstore/general-content/gc1/gc1_packing-sports-equipment.jpg",
+            "image_url":"Utl of the image",
             "subtitle":" Subtitle of the image.",
             "buttons":[
               {
                 "type":"web_url",
-                "url":"www.google.com",
+                "url":"Your_web_url",
                 "title":"Title of the URL"
               },
               {

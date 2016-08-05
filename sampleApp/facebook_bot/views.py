@@ -6,7 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 def post_facebook_message(sender_id,messageData):
-         post_message_url = 'https://graph.facebook.com/v2.6/me/messages?access_token=EAAOSBcZCWFL0BAPVuxtsO5Fm4Ih9yHBs7gTxouEcM6om8Wrtg23dgKfejjg2ZBosiAo67zkyyvvYONc2F8D5iRBfxEuMrGlg3p7KOInBHaZBvY7X3bKyLJLG3qDGqmfzfgCkXFkIPtZCJePkZAVa70FJqzxEqGo7w6BWS2AgCPwZDZD' 
+         post_message_url = 'https://graph.facebook.com/v2.6/me/messages?access_token=Your_Access_Token' 
          response_msg = json.dumps({"recipient":{"id":sender_id}, "message":messageData})
          status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg)
          print(status.json()) 
@@ -50,7 +50,7 @@ def sendAirlineType(sender_id,message):
 class Facebook_view(generic.View):
     
     def get(self, request, *args, **kwargs):
-        if self.request.GET['hub.verify_token'] == 'sampleToken': #or your verify token
+        if self.request.GET['hub.verify_token'] == 'Your_Verify_Token': #or your verify token
             return HttpResponse(self.request.GET['hub.challenge'])
         else:
             return HttpResponse('Error, invalid token')
